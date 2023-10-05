@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page: Justin Alejandria</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+	<!-- CSS Bundle -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<section id="intro" class="container min-vh-100">
+	      <div id="intro-details">
+	        <div id="intro-text">
+	          <p id="intro-one">Hello, I'm <span id="name">Justin Alejandria</span>.</p>
+	          <p id="intro-two">I am a Full-stack Web Developer.</p>
+	        </div>
+	        <button class="get-to-know" role="button"><a id="intro-get" href="#landing">GET TO KNOW ME</a></button>	        
+	      </div>
+	</section>
+
+	<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	  <div class="container-fluid">
+	    <a class="navbar-brand ms-3" href="#navbar">JUSTIN</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#landing">About Me</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#projects">Projects</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#tools">Tools</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#contact">Contact</a>
+	        </li>
+	      </ul>	        
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- START OF LANDING SECTION -->
+	<section id="landing" class="min-vh-100">
+		<div id="landing-container" class="container-fluid d-flex flex-column mt-5">
+			<h1 id="landing-slogan" class="text-center my-5">Can an ex-supply chain professional teach himself / herself web development?</h1>
+			<div id="landing-content" class="row justify-content-center">
+				<img src="./images/profile.jpg" id="landing-image" class="img-fluid col-6 mb-5">
+				<p class="col-6 my-auto mx-3">Better late than never. Committed to the idea of life-long learning. I have a high interest in web/app development and the endless possibilities they offer. Whether working on a personal project or collaborating with a team, I am committed to delivering high-quality output in order to meet the needs of the end users</p>
+			</div>
+		</div>
+	</section>
+	<!-- END OF LANDING SECTION -->
+
+	<!-- START OF PROJECTS SECTION -->
+	<section id="projects" class="container-fluid text-center p-4">
+		<div id="projects-subheading"class="position-relative">
+		  <div id="projects-header-container" class="d-flex justify-content-center">
+		    <h2 id="projects-section-header" class="center">PROJECTS</h2>
+		  </div>
+		  <hr id="projects-line" />
+		</div>
+		<!-- START OF PROJECT 1 -->
+		<div id="project-1" class="container-fluid row my-5">
+		    <div class="col-sm-12 col-md-6 order-2 order-md-1">
+		        <h4 id="project-title">INVENTORY PORTAL</h4>
+		        <p id="projects-description">Created an inventory portal using React.js to create, edit, and delete product entries with the pertinent information (product name, unit of measure, price, etc.)</p>
+		        <a id="project-button" class="btn text-light mt-3 mb-5" href="https://github.com/justin-alejandria" role="button">LIVE DEMO</a>
+		    </div>
+		    <div class="col-sm-12 col-md-6 order-1 order-md-2">
+		        <img id="project-image" class="img-fluid rounded" src="./images/inventory.png"/>
+		    </div>
+		</div>
+		<!-- END OF PROJECT 1 -->
+
+		<!-- START OF PROJECT 2 -->
+		<div id="project-2" class="container-fluid row my-5">
+		    <div class="col-sm-12 col-md-6 order-2 order-md-2">
+		        <h4 id="project-title">GRATITUDE JOURNAL</h4>
+		        <p id="projects-description">Developed a React CRUD application using a JSON server with Axios to log brief daily remembrances of moments or small things to be grateful for</p>
+		        <a id="project-button" class="btn text-light mt-3 mb-5" href="https://github.com/justin-alejandria" role="button">LIVE DEMO</a>
+		    </div>
+		    <div class="col-sm-12 col-md-6 order-1 order-md-1">
+		        <img id="project-image" class="img-fluid rounded" src="./images/gratitude.png"/>
+		    </div>
+		</div>
+		<!-- END OF PROJECT 2 -->
+
+		<!-- START OF PROJECT 3 -->
+		<div id="project-3" class="container-fluid row my-5">
+		    <div class="col-sm-12 col-md-6 order-2 order-md-1">
+		    	<h4 id="project-title">CALCULATOR</h4>
+		        <p id="projects-description">Designed an on-screen calculator as the final project of the "Foundations" module of The Odin Project as culmination of all the basic learnings for HTML, CSS, and Javascript </p>
+		        <a id="project-button" class="btn text-light mt-3 mb-5" href="https://github.com/justin-alejandria" role="button">LIVE DEMO</a>
+		    </div>
+		    <div class="col-sm-12 col-md-6 order-1 order-md-2">
+		        <img id="project-image" class="img-fluid rounded" src="./images/calculator.png"/>
+		    </div>
+		</div>
+		<!-- END OF PROJECT 3 -->
+
+	</section>
+	<!-- END OF PROJECTS SECTION -->
+
+	<!-- START OF TOOLS SECTION -->
+	<section id="tools" class="m-3 min-vh-100">
+		<div id="tools-subheading" class="position-relative">
+		  <div id="tools-header-container" class="d-flex justify-content-center">
+		    <h2 id="tools-section-header" class="center">TOOLS</h2>
+		  </div>
+		  <hr id="tools-line" />
+		</div>
+		<div id="tools-container" class="container-fluid d-flex justify-content-around">
+			<div id="tools-col" class="d-flex flex-column">
+				<img id="tools-icon" src="./images/logo-html5.png">
+				<img id="tools-icon" src="./images/logo-css3.png">
+				<img id="tools-icon" src="./images/logo-javascript.png">
+				<img id="tools-icon" src="./images/logo-git.png">
+			</div>			
+			<div id="tools-col" class="d-flex flex-column">
+				<img id="tools-icon" src="./images/logo-bootstrap.png">
+				<img id="tools-icon" src="./images/logo-rest.png">
+				<img id="tools-icon" src="./images/logo-sublime-text-3.png">
+				<img id="tools-icon" src="./images/logo-postman.png">
+			</div>
+			<div id="tools-col" class="d-flex flex-column">
+				<img id="tools-icon" src="./images/logo-mongodb.png">
+				<img id="tools-icon" src="./images/logo-expressjs.png">
+				<img id="tools-icon" src="./images/logo-react.png">
+				<img id="tools-icon" src="./images/logo-nodejs.png">
+			</div>
+		</div>
+	</section>
+	<!-- END OF TOOLS SECTION -->
+
+	<!-- START OF CONTACT SECTION -->
+	<section id="contact" class="min-vh-100 position-relative" class="">
+	       <div id="contacts-subheading" class="position-relative">
+	         <div id="contacts-header-container" class="d-flex justify-content-center">
+	           <h2 id="contacts-section-header" class="center">CONTACT</h2>
+	         </div>
+	         <hr id="contacts-line"/>
+	       </div>
+	       <div id="contact-container" >
+	         <div id="contact-text" class="d-flex justify-content-center">
+	           <p>If you would like to discuss something, or have an opportunity to share, please leave your details below.</p>
+	       	 </div>
+
+
+
+	         <form id="contact-form" class="d-flex flex-column align-items-center">
+	           <input id="input-name" type="text" name="name" placeholder="Name" maxlength="128" required />
+	           <input id="input-email" type="email" name="email" placeholder="E-mail" maxlength="128" required />
+	           <textarea id="input-message" name="message" rows="5" placeholder="Message" required></textarea>
+
+	           <!-- Button trigger modal -->
+	           <button type="submit" id="submit-button" class="btn text-light mt-5" data-bs-toggle="modal" data-bs-target="#modalDiv">
+	             Send Email
+	           </button>
+
+	           <!-- Modal -->
+	           <div class="modal fade" id="modalDiv" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	             <div class="modal-dialog">
+	               <div class="modal-content">
+	                 <div class="modal-header">
+	                   <h5 class="modal-title text-dark" id="exampleModalLabel">Thank you for your message!</h5>
+	                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	                 </div>
+	                 <div class="modal-body text-dark">
+	                   Message sent succesfully!
+	                 </div>
+	                 <div class="modal-footer">
+	                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	                 </div>
+	               </div>
+	             </div>
+	           </div>
+	         </form>
+	       </div>
+	       <div id="contact-footer" class="d-flex flex-column justify-content-center d-grid gap-3 text-light bg-dark p-2 mt-5">
+	       		<div id="contact-logos" class="d-flex justify-content-center">
+	       			<a href="https://www.facebook.com/"><img class="img-fluid" src="./images/logo-fb.png"></a>
+	       			<a href="https://github.com/justin-alejandria"><img class="img-fluid" src="./images/logo-github.png"></a>
+	       			<a href="https://www.linkedin.com"><img class="img-fluid" src="./images/logo-linkedin.png"></a>
+	       		</div>
+	       		<div id="contact-copyrights" class="d-flex justify-content-center d-grid gap-3 text-light bg-dark p-2">
+		           <div>&copy; 2023 Justin Alejandria</div>
+		           <div>|</div>
+		           <div>All rights reserved.</div>
+	           </div>
+	       </div>
+	     </section>
+	<!-- END OF CONTACT SECTION -->
+
+
+	<!-- JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

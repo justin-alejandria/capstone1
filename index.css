@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #1a1a2d;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/*INTRO CSS*/
+#intro {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+#intro-details {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#intro-text {
+	font-size: 2.7rem;
+	text-align: center;
+}
+
+#intro-one {
+	animation: fadein 1s, fadedown 1s forwards;
+    position: relative;
+}
+
+#name {
+	color: #d24141;
+}
+
+#intro-two {
+	animation: fadein 1s forwards, fadedown 1s forwards;
+	animation-delay: 1.5s;
+	opacity: 0;
+	position: relative;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadedown {
+  from { top: -100px; }
+  to { top: 0px; }
+}
+
+#intro-get {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.get-to-know {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #d24141;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.get-to-know:hover,
+.get-to-know:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.get-to-know:active {
+  background: var(--color);
+  color: #fff;
+}
+
+/*LANDING CSS*/
+
+#landing-slogan {
+	color: #d24141;
+}
+#landing-image {
+	height: 500px;
+	width: 400px;
+	max-width: 80%;
+	border-radius: 15%;
+}
+
+/*PROJECTS CSS*/
+#projects-subheading {
+	position: relative;
+	width: 100%;
+}
+
+#projects-header-container {
+    margin: 2px auto 0;
+    max-width: 1500px;
+    text-align: center;
+    width: 100%
+	}
+
+#projects-section-header {
+	background: #1a1a2d;
+	display: inline;
+	font-weight: 400;
+	margin-top: 40px;
+	padding: 0 10px;
+}
+
+#projects-line {
+	border: 1px solid #d24141;
+    opacity: 100%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+#project-title {
+	color: #d24141;
+	margin: 1.5rem auto 0.5rem;
+}
+
+#project-image {
+	height: 225px;
+	width: 500px;
+}
+
+#projects-description {
+	font-size: 1rem;
+}
+
+#project-button {
+	width: 150px;
+	background-color: #d24141;
+}
+
+
+/*TOOLS CSS*/
+#tools-subheading {
+	position: relative;
+	width: 100%;
+}
+
+#tools-header-container {
+    margin: 0 auto;
+    max-width: 1500px;
+    text-align: center;
+    width: 100%
+	}
+
+#tools-section-header {
+	background: #1a1a2d;
+	display: inline;
+	font-weight: 400;
+	margin-top: 40px;
+	padding: 0 10px;
+}
+
+#tools-line {
+	border: 1px solid #d24141;
+    opacity: 100%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+#tools-icon {
+	max-width: 30vw;
+	width: 100px;
+	height: auto;
+	margin: 1.5rem;
+}
+
+/*CONTACTS CSS*/
+
+#contacts-subheading {
+	position: relative;
+	width: 100%;
+}
+
+#contacts-header-container {
+    margin: 0 auto;
+    max-width: 1500px;
+    text-align: center;
+    width: 100%
+	}
+
+#contacts-section-header {
+	background: #1a1a2d;
+	display: inline;
+	font-weight: 400;
+	margin-top: 40px;
+	padding: 0 10px;
+}
+
+#contacts-line {
+	border: 1px solid #d24141;
+    opacity: 100%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+#contact-text > p {
+	margin: 1.5rem;
+}
+
+#input-name, #input-email, #input-message {
+	max-width: 80vw;
+	width: 500px;
+	margin: 0.5rem;
+}
+
+#submit-button {
+	background-color: #d24141;
+}
+
+#contact-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#contact-logos img {
+	max-width: 15vw;
+	width: 50px;
+	height: auto;
+	margin: 1.5rem;
+}
